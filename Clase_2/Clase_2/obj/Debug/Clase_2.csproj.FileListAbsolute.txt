@@ -1,0 +1,6 @@
+C:\Diego\Clase_2\Clase_2\bin\Clase_2.dll.config
+C:\Diego\Clase_2\Clase_2\bin\Clase_2.dll
+C:\Diego\Clase_2\Clase_2\bin\Clase_2.pdb
+C:\Diego\Clase_2\Clase_2\obj\Debug\Clase_2.csprojResolveAssemblyReference.cache
+C:\Diego\Clase_2\Clase_2\obj\Debug\Clase_2.dll
+C:\Diego\Clase_2\Clase_2\obj\Debug\Clase_2.pdb
