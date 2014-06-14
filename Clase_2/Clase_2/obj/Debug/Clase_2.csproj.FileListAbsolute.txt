@@ -4,3 +4,9 @@ C:\Diego\Clase_2\Clase_2\bin\Clase_2.pdb
 C:\Diego\Clase_2\Clase_2\obj\Debug\Clase_2.csprojResolveAssemblyReference.cache
 C:\Diego\Clase_2\Clase_2\obj\Debug\Clase_2.dll
 C:\Diego\Clase_2\Clase_2\obj\Debug\Clase_2.pdb
+C:\Users\Alumno\Documents\GitHub\ClaseUA\Clase_2\Clase_2\bin\Clase_2.dll.config
+C:\Users\Alumno\Documents\GitHub\ClaseUA\Clase_2\Clase_2\bin\Clase_2.dll
+C:\Users\Alumno\Documents\GitHub\ClaseUA\Clase_2\Clase_2\bin\Clase_2.pdb
+C:\Users\Alumno\Documents\GitHub\ClaseUA\Clase_2\Clase_2\obj\Debug\Clase_2.csprojResolveAssemblyReference.cache
+C:\Users\Alumno\Documents\GitHub\ClaseUA\Clase_2\Clase_2\obj\Debug\Clase_2.dll
+C:\Users\Alumno\Documents\GitHub\ClaseUA\Clase_2\Clase_2\obj\Debug\Clase_2.pdb
