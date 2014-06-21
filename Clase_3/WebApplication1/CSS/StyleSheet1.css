@@ -1,0 +1,119 @@
+﻿body {
+    background: #0094ff;
+    color: #000000;
+    font-family: 'Lora|Oswald';
+    font-size:16px;
+}
+
+#parrafo1 {
+    font-family: Andalus;
+}
+.parrafoclase {
+    color: blue;
+}
+
+p {
+    font-family: icomoon;
+}
+
+ul li {
+    color: #ff6a00;
+    font-size: 2em;
+    list-style: none;
+    display: inline-block;
+    margin-left: 1em;
+}
+
+div {
+    border: 5px solid red;
+    padding: 1em;
+    margin: 2em;
+    width:50%;
+
+}
+
+
+
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('fuentes/icomoon.eot?az15mf');
+	src:url('fuentes/icomoon.eot?#iefixaz15mf') format('embedded-opentype'),
+		url('fuentes/icomoon.woff?az15mf') format('woff'),
+		url('fuentes/icomoon.ttf?az15mf') format('truetype'),
+		url('fuentes/icomoon.svg?az15mf#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home:before {
+	content: "\e600";
+}
+.icon-office:before {
+	content: "\e601";
+}
+.icon-image:before {
+	content: "\e602";
+}
+.icon-camera:before {
+	content: "\e603";
+}
+.icon-music:before {
+	content: "\e604";
+}
+.icon-headphones:before {
+	content: "\e605";
+}
+.icon-play:before {
+	content: "\e606";
+}
+.icon-camera2:before {
+	content: "\e607";
+}
+.icon-dice:before {
+	content: "\e608";
+}
+.icon-clubs:before {
+	content: "\e609";
+}
+.icon-bullhorn:before {
+	content: "\e60a";
+}
+.icon-connection:before {
+	content: "\e60b";
+}
+.icon-book:before {
+	content: "\e60c";
+}
+.icon-paste:before {
+	content: "\e60d";
+}
+.icon-folder-open:before {
+	content: "\e60e";
+}
+.icon-cart:before {
+	content: "\e60f";
+}
+.icon-coin:before {
+	content: "\e610";
+}
+.icon-phone:before {
+	content: "\e611";
+}
+
+
+
