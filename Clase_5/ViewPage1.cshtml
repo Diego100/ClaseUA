@@ -4,35 +4,12 @@
 
 @{
     var result = "";
-    if (IsPost)
-    {
-        result = "Esta pagina fue posteada utilizando el boton Aceptar";
-    }
-    else
-    {
-        result = "Esta es la primera peticion de la pagina";
+    if(IsPost){
+        result="Esta pagina fue posteada utilizando el boton Aceptar";
+    }else{
+        result="Esta es la primera peticion de la pagina";
     }
 }
-
-
-@*bloque de instrucciones simple*@
-@{var total = 7;}
-@{var miMensaje = "Hola Mundo";}
-
-@*Expresiones de Linea*@
-<p>El valor de tu cuenta es = @total</p>
-<p>El valor de mi mensaje es = @miMensaje</p>
-
-@*Bloque de multiples lineas de instrucciones*@
-@{
-    var saludo = "Bienvenido a nuestro sitio";
-    var dia = DateTime.Now.DayOfWeek;
-    var saludoBienvenida = saludo + "  Hoy es:  " + dia;
-}
-
-<p>El saludo es: @saludoBienvenida</p>
-
-
 
 <!DOCTYPE html>
 
@@ -40,15 +17,13 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title></title>
-
 </head>
 <body>
-    <div>
-        <form action=" " method="post">
-            <input type="Submit" name="Submit" value="Aceptar" />
-            <p>@result</p>
-        </form>
 
-    </div>
+    <form action="/"method="post">
+        <input type="submit" name="Submit" value="Aceptar" />
+        <p>@result</p>
+    </form>
+    
 </body>
 </html>
