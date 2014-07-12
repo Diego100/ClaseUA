@@ -1,0 +1,29 @@
+﻿@{
+    Layout = null;
+}
+
+@{
+    var result = "";
+    if(IsPost){
+        result="Esta pagina fue posteada utilizando el boton Aceptar";
+    }else{
+        result="Esta es la primera peticion de la pagina";
+    }
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+
+    <form action="/"method="post">
+        <input type="submit" name="Submit" value="Aceptar" />
+        <p>@result</p>
+    </form>
+    
+</body>
+</html>
