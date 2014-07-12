@@ -63,7 +63,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ViewPage1.cshtml" />
+    <Content Include="..\..\..\Clase_5\ViewPage1.cshtml">
+      <Link>ViewPage1.cshtml</Link>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
