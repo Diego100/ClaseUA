@@ -1,0 +1,21 @@
+﻿body {
+    background: #4cb3fc;
+    color: #ffffff;
+    font-family: 'Comic Sans MS';
+    font-size:x-large;
+    margin: 5em;
+}
+
+p{
+    color: #ffffff;
+    font-family: 'Comic Sans MS';
+    font-size:xx-large;
+    text-align:center;
+    border: 2px solid white;
+}
+
+
+legend {
+    text-align:center;  
+    color:#ffffff;
+}

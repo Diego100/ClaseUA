@@ -1,0 +1,87 @@
+﻿
+<link href="Estilo.css" rel="stylesheet" />
+
+@{
+    var CodEmp = "";
+    var Nombre = "";
+    var Apellido = "";
+    var CI = "";
+    var Direccion = "";
+    var Telefono = "";
+    
+    if (IsPost)
+    {
+        CodEmp = Request["CodEmp"];
+        Nombre = Request["Nombre"];
+        Apellido = Request["Apellido"];
+        CI = Request["CI"];
+        Direccion = Request["Direccion"];
+        Telefono = Request["Telefono"];
+        
+        Validation.RequireFields("CodEmp", "Nombre", "Apellido", "CI", "Direccion", "Telefono");
+        
+    
+        var SQLINSERT = "INSERT INTO Empleado (CodEmp, Nombre, Apellido, CI, Direccion, Telefono) VALUES (@0, @1, @2, @3, @4, @5)";
+   
+        
+        if (Validation.IsValid())
+        {
+            try
+            {
+                var db = Database.Open("conn");
+                db.Execute(SQLINSERT, CodEmp, Nombre, Apellido, CI, Direccion, Telefono);
+                Response.Write("Datos Guardados!");
+            }
+            catch (Exception ex)
+            {
+                Response.Write(ex.Message);
+            }
+        }
+    }
+}
+    
+
+<p>WELCOME TO MY PAGE</p>
+
+<form method="post" >
+    <fieldset>
+        <legend>Registro de Nuevo Empleado</legend>
+        <div>
+            <label>Codigo:</label>
+            <input type="number" value="@CodEmp" name="CodEmp" />
+            @Html.ValidationMessage("CodEmp")
+        </div>
+
+        <div>
+            <label>Nombre:</label>
+            <input type="text" value="@Nombre" name="Nombre" />
+            @Html.ValidationMessage("Nombre")
+        </div>
+
+        <div>
+            <label>Apellido:</label>
+            <input type="text" value="@Apellido" name="Apellido" />
+            @Html.ValidationMessage("Apellido")
+        </div>
+
+        <div>
+            <label>CI:</label>
+            <input type="text" value="@CI" name="CI" />
+            @Html.ValidationMessage("CI")
+        </div>
+
+        <div>
+            <label>Direccion:</label>
+            <input type="text" value="@Direccion" name="Direccion" />
+            @Html.ValidationMessage("Direccion")
+        </div>
+
+        <div>
+            <label>Telefono:</label>
+            <input type="text" value="@Telefono" name="Telefono" />
+            @Html.ValidationMessage("Telefono")
+        </div>
+
+        <input type="submit" value="Guardar" />
+    </fieldset>
+</form>

@@ -1,0 +1,18 @@
+﻿@{
+    var db = Database.Open("conn");
+    var SQLSELECT = "SELECT CodEmp, Nombre, Apellido, CI, Direccion, Telefono FROM Empleado";
+    var data = db.Query (SQLSELECT);
+    var grilla = new WebGrid (source: data, rowsPerPage: 10);   
+}
+
+<body>
+    @grilla.GetHtml(columns: grilla.Columns (
+        grilla.Column ("CodEmp", "Codigo", format: @<a href=" " > @item.CodEmp </a>),
+        grilla.Column ("Nombre", "Nombre", format: @<a href=" " > @item.Nombre </a>),
+        grilla.Column ("Apellido", "Apellido", format: @<a href="">@item.Apellido </a>),
+        grilla.Column ("CI", "CI", format: @<a href=" " > @item.CI </a>),
+        grilla.Column ("Direccion", "Direccion", format: @<a Href=" " > @item.Direccion </a>),
+        grilla.Column ("Telefono", "Telefono", format: @<a Href=" " > @item.Telefono</a>)
+        )
+    )
+</body>
