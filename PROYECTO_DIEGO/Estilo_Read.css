@@ -1,9 +1,9 @@
 ﻿body {
-    background: #4cb3fc;
+    background: #7bf1db;
     color: #ffffff;
+    margin: 2em;
     font-family: 'Comic Sans MS';
     font-size:large;
-    margin: 2em;
 }
 
 p{
@@ -15,7 +15,3 @@ p{
 }
 
 
-legend {
-    text-align:center;  
-    color:#ffffff;
-}
