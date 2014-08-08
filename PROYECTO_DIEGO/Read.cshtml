@@ -1,17 +1,9 @@
-﻿
-<link href="Estilo_Read.css" rel="stylesheet" />
-
-@{
+﻿@{
     var db = Database.Open("conn");
     var SQLSELECT = "SELECT CodEmp, Nombre, Apellido, CI, Direccion, Telefono FROM Empleado";
     var data = db.Query (SQLSELECT);
     var grilla = new WebGrid (source: data, rowsPerPage: 10);   
 }
-
-
-<p>WELCOME</p>
-
-<a href="Create.cshtml"> Registrar nuevo Empleado </a>
 
 <body>
     @grilla.GetHtml(columns: grilla.Columns (
